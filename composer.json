@@ -1,0 +1,33 @@
+{
+    "name": "mahabub/gglink",
+    "description": "for GGLink",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+	"autoload": {
+        "psr-4": {
+            "Mahabub\\GGLink\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mahabub\\GGLink\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mahabub\\GGLink\\Providers\\GGLinkServiceProvider"
+            ]
+        }
+    }
+}
